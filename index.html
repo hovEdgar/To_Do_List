@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Let's To Do</title>
+    <style>
+        body {
+            background-image: url('./images/bg-small.jpg');
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Let's to do something</h1>
+    <h4>You have <span class="result"></span> tasks to complete</h4>
+</div>
+<div class="container">
+    <div class="container__input">
+
+        <input type="text" placeholder="What you gonna do?"/>
+    </div>
+    <div class="container__control">
+        <div class="filters">
+            <span id="all" class="active">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+        </div>
+        <button class="btn-clear">Clear ALL</button>
+    </div>
+    <ul class="task-box"></ul>
+</div>
+<footer class="footer">
+    <a class="developer" href="https://www.facebook.com/myhomeisarmenia/"
+       target="_blank">
+        ♦ © Edgar Hovsepyan - let's get to know each other ☺ ♦
+    </a>
+</footer>
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>
