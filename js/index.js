@@ -11,17 +11,16 @@ const filters = document.querySelectorAll(".filters span");
 let editId;
 let editCheck = false;
 let result = 0;
+taskToDo.innerHTML = result;
 
 // Creating localstorage
 let todos = JSON.parse(localStorage.getItem('todo-list'));
 
 // Show number of non completed tasks
 function showNumberOfTAsks() {
-    result = todos.filter(elem => elem.status === 'pending').length;
-    taskToDo.innerHTML = result;
+   result = todos.filter(elem => elem.status === 'pending').length;
+   taskToDo.innerHTML = result;
 }
-
-showNumberOfTAsks()
 
 // Show active filter
 filters.forEach(elem => {
